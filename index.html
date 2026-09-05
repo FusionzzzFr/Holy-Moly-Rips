@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Holy Moly Rips</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: #0d0d0d;
+    color: #e0e0e0;
+    font-family: 'VT323', monospace;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: 
+      radial-gradient(circle at 20% 30%, #1a1a2e 0%, transparent 40%),
+      radial-gradient(circle at 80% 70%, #16213e 0%, transparent 35%);
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 20px;
+  }
+
+  h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 28px;
+    color: #ff6b6b;
+    text-shadow: 3px 3px 0 #000;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+    color: #aaa;
+    margin-bottom: 8px;
+  }
+
+  .note {
+    font-size: 18px;
+    color: #666;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto 40px;
+  }
+
+  .game-card {
+    background: #1a1a1a;
+    border: 3px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.15s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .game-card:hover {
+    border-color: #ff6b6b;
+    transform: translateY(-4px);
+    background: #222;
+  }
+
+  .game-card:active {
+    transform: translateY(-1px);
+  }
+
+  .game-icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .game-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+
+  .game-desc {
+    font-size: 18px;
+    color: #888;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  /* tiny mobile tweak */
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 20px;
+    }
+    .game-title {
+      font-size: 12px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>HOLY MOLY RIPS</h1>
+  <p class="subtitle">random sports games collection</p>
+  <p class="note">just some html5 rips i collected. click any to play</p>
+</header>
+
+<div class="games">
+
+  <a href="Basket Random/index.html" class="game-card">
+    <span class="game-icon">🏀</span>
+    <div class="game-title">Basket Random</div>
+    <div class="game-desc">2 player basketball chaos</div>
+  </a>
+
+  <a href="Boxing Random/index.html" class="game-card">
+    <span class="game-icon">🥊</span>
+    <div class="game-title">Boxing Random</div>
+    <div class="game-desc">punch it out</div>
+  </a>
+
+  <a href="Soccer Random/index.html" class="game-card">
+    <span class="game-icon">⚽</span>
+    <div class="game-title">Soccer Random</div>
+    <div class="game-desc">kick some goals</div>
+  </a>
+
+  <a href="Volley Random/index.html" class="game-card">
+    <span class="game-icon">🏐</span>
+    <div class="game-title">Volley Random</div>
+    <div class="game-desc">beach volleyball vibes</div>
+  </a>
+
+  <a href="Divinestead/index.html" class="game-card">
+    <span class="game-icon">🏰</span>
+    <div class="game-title">Divinestead</div>
+    <div class="game-desc">the other one</div>
+  </a>
+
+</div>
+
+<footer>
+  made for fun · works best on desktop<br>
+  all games are local html5 exports
+</footer>
+
+</body>
+</html>
