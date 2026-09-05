@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Soccer Random</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<!-- base points everything to the real game files on cdn -->
+<base href="https://cdn.jsdelivr.net/gh/FusionzzzFr/Holy-Moly-Rips@main/Soccer%20Random/">
+
+<meta name="generator" content="Scirra Construct">
+<meta name="author" content="RHM Interactive">
+<meta name="description" content="Random Physics Soccer">
+
+<link rel="stylesheet" href="style.css">
+
+<script>
+// stop arrow keys from scrolling the page
+window.addEventListener("keydown", function(e) {
+  if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+    e.preventDefault();
+  }
+}, false);
+</script>
+
+<!-- ads stuff left in case it still works, can remove later -->
+<script async
+  data-ad-client="ca-pub-8349441957149316"
+  data-ad-channel="9976299074"
+  data-ad-frequency-hint="30s"
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+  crossorigin="anonymous">
+</script>
+
+<script>
+  window.adsbygoogle = window.adsbygoogle || [];
+  const adBreak = adConfig = function(o) { adsbygoogle.push(o); }
+  adConfig({
+    preloadAdBreaks: 'on',
+    onReady: () => { console.log("onReady") }
+  });
+</script>
+
+<script>
+  function CallInterstitialAds() {
+    adBreak({
+      type: 'next',
+      name: 'restart-game',
+      beforeAd: () => {
+        console.log("Ad Started!");
+        c3_callFunction("adStarted");
+      },
+      afterAd: () => {
+        c3_callFunction("onClose");
+        console.log("After Ad Finished");
+      },
+      adBreakDone: () => {
+        console.log('adBreakDone');
+        c3_callFunction("onClose");
+      }
+    });
+  }
+</script>
+</head>
+<body>
+
+<script>
+// just a little warning if someone opens the raw file locally
+if (location.protocol.substr(0, 4) === "file") {
+  console.log("running from file:// - some stuff might break, better open via the site");
+}
+</script>
+
+<script src="box2d.wasm.js"></script>
+<noscript>
+  <div id="notSupportedWrap">
+    <h2 id="notSupportedTitle">This content requires JavaScript</h2>
+    <p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+  </div>
+</noscript>
+<script src="scripts/supportcheck.js"></script>
+<script src="scripts/offlineclient.js" type="module"></script>
+<script src="scripts/main.js" type="module"></script>
+<script src="scripts/register-sw.js" type="module"></script>
+
+</body>
+</html>
