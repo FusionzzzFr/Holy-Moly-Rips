@@ -1,0 +1,15 @@
+{
+  "name": "Five Nights at Freddy's NES",
+  "short_name": "Five Nights at Freddy's NES",
+  "id": "com.example.gamename",
+  "description": "I hate that this game is the most succesful thing I've ever made... I hope you can enjoy it tho!\n\nThis was made a few years ago for a game jam and im publishing it to gdgames now.\n\nHere's the itchio page: https://endoblance.itch.io/fnafnes",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": [{
+        "src": "Banner.png",
+        "sizes": "512x512"
+      }]
+}
